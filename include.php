@@ -35,7 +35,6 @@ function bannedUser($arUser)
     );
     $resBan = SouthCoast\Reviews\Internals\ReviewsBansTable::add($arFields);
 
-    /*  Ошибка добавления пользователя в черный список! Отправить письмо или написать в журнал событий??? */
     if (!$resBan->isSuccess())
         $errBan = $resBan->getErrorMessages();
 
@@ -45,9 +44,6 @@ function bannedUser($arUser)
     return $errorsBan;
 }
 
-/*  Проверки текстовых полей, т.е. "PLUS", "MINUS" в sc_reviews_reviews и
-    все пользовательские поля в названии которых нет строки "DATE"
-    Проверка на SQL-инъекцию, нецензурные выражения, может быть что-то еще */
 function checkTextField($nameField, $valueField, $arChecks)
 {
     $arRes = [];
@@ -91,8 +87,6 @@ function sendRepeatMessage($arReview)
     ]);
 }
 
-/*  Проверка отзыва: проверка на повторный отзыв, добавление в черный список,
-    может быть что-то еще */
 function checkReview($arReview)
 {
     $arErrors = [];
@@ -112,21 +106,16 @@ function checkReview($arReview)
     else
         $ip_user = $_SERVER["REMOTE_ADDR"];
 
-    // Получаем все проверки для текстовых полей, чтобы не повторять один и тот же запрос несколько раз
     $rsChecks = SouthCoast\Reviews\Internals\ChecksReviewTable::getList([
         'select' => ['ID', 'NAME', 'VALUE', 'PATTERN', 'RESULT']
     ]);
     while($arCheck = $rsChecks->fetch())
         $arChecks[$arCheck['ID']] = $arCheck;
 
-    // Получаем все поля отзывов, кроме пользовательских полей
     $arObjReviewFields = SouthCoast\Reviews\Internals\ReviewsTable::getMap();
     foreach($arObjReviewFields as $keyField => $objField)
         $arReviewFields[$keyField] = $objField->getName();
 
-    // Цикл по всем полям отзыва, в том числе пользовательским:
-    // выбираем "PLUS", "MINUS" и все текстовые пользовательские поля и проверяем их
-    // Пользовательские поля оканчиваются на "_VAL" и не содержат "DATE"
     foreach($arReview as $codeField => $valueField)
     {
         if( in_array($codeField, ["PLUS", "MINUS"]) )
@@ -137,7 +126,6 @@ function checkReview($arReview)
         }
     }
 
-    // Повторный отзыв ищем: если пользователь авторизован и ID_USER > 0, то по ID-пользователя, иначе - по $_COOKIE['BX_USER_ID']
     if($USER->IsAuthorized())
         $cntReviews = findCountReviews($arReview['ID_ELEMENT'], 'ID_USER', $USER->GetID());
 
@@ -145,12 +133,11 @@ function checkReview($arReview)
         sendRepeatMessage($arReview);
     else
     {
-        $cntReviews = findCountReviews($arReview['ID_ELEMENT'], 'BX_USER_ID', $bx_user_id); //$_COOKIE['BX_USER_ID']);
+        $cntReviews = findCountReviews($arReview['ID_ELEMENT'], 'BX_USER_ID', $bx_user_id); 
         if($cntReviews > 0)
             sendRepeatMessage($arReview);
     }
 
-    // После всех проверок анализируем результаты проверок и если надо - баним пользователя или что-то еще делаем
     if(array_key_exists('BANED', $arErrors))
     {
         $arUser = [
@@ -169,15 +156,12 @@ function checkReview($arReview)
 
         $arErrors = array_merge($arErrors, bannedUser($arUser));
 
-        // Если автоматически баним пользователя, то никаких ошибок не показываем???
-        // Может быть отправлять сообщение или запись в журнал событий???
         unset($arErrors);
         $arErrors["BANED"] = "BANED";
     }
     return $arErrors;
 }
 
-/* Сброс тегированного кеша и html-кеша компонента (reviews.list) по элементу (объекту) */
 function clearCacheElement($elementID, $reviewID)
 {
     global $CACHE_MANAGER;
@@ -201,10 +185,8 @@ function clearCacheElement($elementID, $reviewID)
     }
 }
 
-/* Удаление "частично" сохраненного отзыва (новый отзыв, при сохранении которого произошли ошибки в проверках) */
 function deleteReviewWithErrors($reviewID)
 {
-    // Сначала удаляем дополнительные поля
     $dbReviewFieldsValues = \SouthCoast\Reviews\Internals\ReviewsFieldsValuesTable::getList([
         'select' => ['ID'],
         'filter' => ['REVIEW_ID' => $reviewID]
@@ -212,6 +194,5 @@ function deleteReviewWithErrors($reviewID)
     while($arReviewFieldsValues = $dbReviewFieldsValues->fetch())
         \SouthCoast\Reviews\Internals\ReviewsFieldsValuesTable::delete($arReviewFieldsValues['ID']);
 
-    // Удаляем сам отзыв
     \SouthCoast\Reviews\Internals\ReviewsTable::delete($reviewID);
 }
