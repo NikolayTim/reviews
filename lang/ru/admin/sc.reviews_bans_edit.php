@@ -1,0 +1,22 @@
+<?
+$MESS["SC_REVIEWS_BAN_EDIT_TAB"] = "Бан";
+$MESS["SC_REVIEWS_BAN_EDIT_TAB_TITLE"] = "Основные параметры бана";
+$MESS["SC_REVIEWS_BAN_EDIT_EDIT"] = "Редактирование забаненного пользователя #";
+$MESS["SC_REVIEWS_BAN_EDIT_ADD"] = "Добавление пользователя в бан";
+$MESS["SC_REVIEWS_BAN_EDIT_LIST"] = "Список";
+$MESS["SC_REVIEWS_BAN_EDIT_LIST_TITLE"] = "Список банов";
+$MESS["SC_REVIEWS_BAN_EDIT_DEL"] = "Удалить";
+$MESS["SC_REVIEWS_BAN_EDIT_DEL_TITLE"] = "Удалить запись";
+$MESS["SC_REVIEWS_BAN_EDIT_DEL_CONF"] = "Действительно удалить запись?";
+$MESS["SC_REVIEWS_BAN_EDIT_SAVED"] = "Успешно сохранено.";
+$MESS["SC_REVIEWS_BAN_EDIT_ID"] = "ID:";
+$MESS["SC_REVIEWS_BAN_EDIT_IP"] = "IP:";
+$MESS["SC_REVIEWS_BAN_EDIT_ACT"] = "Активность:";
+$MESS["SC_REVIEWS_BAN_EDIT_ID_USER"] = "Пользователь:";
+$MESS["SC_REVIEWS_BAN_EDIT_BX_USER_ID"] = "BX_USER_ID пользователя:";
+$MESS["SC_REVIEWS_BAN_EDIT_DATE_CREATION"] = "Дата создания:";
+$MESS["SC_REVIEWS_BAN_EDIT_DATE_CHANGE"] = "Дата изменения:";
+$MESS["SC_REVIEWS_BAN_EDIT_DATE_TO"] = "Дата окончания бана:";
+$MESS["SC_REVIEWS_BAN_EDIT_REASON"] = "Причина:";
+$MESS["SC_REVIEWS_BAN_EDIT_MODERATED_BY"] = "Модератор:";
+$MESS["SC_REVIEWS_BAN_EDIT_NOT_AUTHORIZED_USER"] = "Неавторизованный пользователь";

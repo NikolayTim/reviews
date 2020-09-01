@@ -1,0 +1,139 @@
+div.bx-system-auth-form span.bx-auth-secure {
+	background-color: #FFFAE3;
+	border: 1px solid #DEDBC8;
+	padding: 2px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-top: -1px;
+}
+
+div.bx-system-auth-form div.bx-auth-secure-icon {
+	background-image: url(images/sec.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 19px;
+	height: 18px;
+}
+
+div.bx-system-auth-form div.bx-auth-secure-unlock {
+	background-image: url(images/sec-unlocked.png);
+}
+
+@media ( max-width : 767px) {
+	.auth_review input[type="text"] {
+		margin-bottom: 15px;
+	}
+	.auth_review .form-group {
+		margin: 0 auto;
+		width: 230px;
+		display: block;
+	}
+	.auth_review input[type="submit"] {
+		margin: 0 auto;
+		display: block;
+	}
+	.auth_review .checkbox {
+		margin: 20px auto 0 auto;
+		width: 110px;
+	}
+}
+
+@media ( min-width : 767px) {
+	.auth_review .form-group {
+		display: inline-block;
+	}
+	.auth_review {
+		
+	}
+	.auth_review .checkbox {
+		margin-top: 15px;
+	}
+}
+
+.auth_review {
+	text-align: left;
+}
+
+.auth_review input[type="text"], .auth_review input[type="password"] {
+	width: 230px;
+	color: #303030;
+	font-size: 12px;
+	font-family: "ProximaNovaLight", Arial, sans-serif;
+	border: 1px solid #e2e5e9;
+	padding: 10px;
+}
+
+.auth_review input[type="text"] {
+	margin-right: 20px;
+}
+
+.auth_review .form-group {
+	margin-bottom:0;
+}
+
+.auth_review .form-group p {
+	text-align: left;
+	color: #6c727d;
+	font-size: 12px;
+	font-family: "ProximaNovaLight", Arial, sans-serif;
+	margin-bottom: 3px;
+}
+
+.auth_review .form-group a {
+	line-height: 10px;
+	float: right;
+	color: #6c727d;
+	font-size: 12px;
+	font-family: "ProximaNovaLight", Arial, sans-serif;
+	text-decoration: none;
+	border-bottom: 1px solid #dadbdd;
+}
+
+.auth_review .checkbox {
+	text-align: left;
+	line-height: 13px;
+}
+
+.auth_review .checkbox input[type="checkbox"] {
+	margin-right: 10px;
+	float: left;
+}
+
+.auth_review .checkbox label {
+	color: #303030;
+	font-size: 12px;
+	font-family: "ProximaNovaLight", Arial, sans-serif;
+	clear: both;
+}
+
+.auth_review input[type="submit"] {
+	display:block;
+	margin:15px 0;
+}
+
+.auth_review input[type="checkbox"] {
+	display: none;
+}
+
+.auth_review input[type="checkbox"] ~ label>span {
+	border: 1px solid #b8b8b8;
+	display: inline-block;
+	height: 10px;
+	margin: 0 7px 0 0;
+	position: relative;
+	width: 10px;
+}
+
+.auth_review input[type="checkbox"]  ~ label>span:after {
+	position: absolute;
+	content: "\f00c";
+	color: #303030;
+	font-family: FontAwesome;
+	font-size: 8px;
+	line-height: 8px;
+	display:none;
+}
+.auth_review input[type="checkbox"]  ~ label.checked > span:after {
+	display:block;
+}
+

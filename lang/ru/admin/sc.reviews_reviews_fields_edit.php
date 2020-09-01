@@ -1,0 +1,19 @@
+<?
+$MESS["SC_REVIEWS_FIELDS_EDIT_TAB_CONDITION"] = "Дополнительное поле";
+$MESS["SC_REVIEWS_FIELDS_EDIT_TAB_CONDITION_TITLE"] = "Дополнительное поле";
+$MESS["SC_REVIEWS_FIELDS_EDIT_EDIT"] = "Редактирование дополнительного поля #";
+$MESS["SC_REVIEWS_FIELDS_EDIT_ADD"] = "Добавление дополнительного поля";
+$MESS["SC_REVIEWS_FIELDS_EDIT_ADD_TITLE"] = "Добавление дополнительного поля (title)";
+$MESS["SC_REVIEWS_FIELDS_EDIT_LIST"] = "Список";
+$MESS["SC_REVIEWS_FIELDS_EDIT_LIST_TITLE"] = "Список дополнительных полей";
+$MESS["SC_REVIEWS_FIELDS_EDIT_DEL"] = "Удалить";
+$MESS["SC_REVIEWS_FIELDS_EDIT_DEL_TITLE"] = "Удалить запись";
+$MESS["SC_REVIEWS_FIELDS_EDIT_DEL_CONF"] = "Действительно удалить запись?";
+$MESS["SC_REVIEWS_FIELDS_EDIT_SAVED"] = "Успешно сохранено.";
+$MESS["SC_REVIEWS_FIELDS_EDIT_ID"] = "ID:";
+$MESS["SC_REVIEWS_FIELDS_EDIT_ACT"] = "Активность:";
+$MESS["SC_REVIEWS_FIELDS_EDIT_SORT"] = "Сортировка:";
+$MESS["SC_REVIEWS_FIELDS_EDIT_NAME"] = "Код:";
+$MESS["SC_REVIEWS_FIELDS_EDIT_TITLE"] = "Название:";
+$MESS["SC_REVIEWS_FIELDS_EDIT_TYPE"] = "Тип:";
+$MESS["SC_REVIEWS_FIELDS_EDIT_SETTINGS"] = "Настройки:";

@@ -1,0 +1,23 @@
+<?php
+$MESS["SC_REVIEWS_CHECKS_SAVE_ERROR"] = "Ошибка изменения записи:";
+$MESS["SC_REVIEWS_CHECKS_NOT_FOUND"] = "Запись не найдена";
+$MESS["SC_REVIEWS_CHECKS_DEL_ERROR"] = "Невозможно удалить запись.";
+$MESS["SC_REVIEWS_CHECKS_NAV"] = "Поля";
+$MESS["SC_REVIEWS_CHECKS_TABLE_ID"] = "ID";
+$MESS["SC_REVIEWS_CHECKS_TABLE_NAME"] = "Наименование проверки";
+$MESS["SC_REVIEWS_CHECKS_TABLE_VALUE"] = "Строка";
+$MESS["SC_REVIEWS_CHECKS_TABLE_PATTERN"] = "Шаблон";
+$MESS["SC_REVIEWS_CHECKS_TABLE_RESULT"] = "Результат проверки";
+$MESS["SC_REVIEWS_CHECKS_EDIT"] = "Изменить";
+$MESS["SC_REVIEWS_CHECKS_DEL"] = "Удалить";
+$MESS["SC_REVIEWS_CHECKS_DEL_CONF"] = "Удалить запись?";
+$MESS["SC_REVIEWS_CHECKS_LIST_SELECTED"] = "Выбрано:";
+$MESS["SC_REVIEWS_CHECKS_LIST_CHECKED"] = "Отмечено:";
+$MESS["SC_REVIEWS_CHECKS_LIST_DELETE"] = "удалить";
+$MESS["SC_REVIEWS_CHECKS_POST_ADD_TEXT"] = "Добавить";
+$MESS["SC_REVIEWS_CHECKS_POST_ADD_TITLE"] = "Добавить";
+$MESS["SC_REVIEWS_CHECKS_TITLE"] = "Название";
+$MESS["SC_REVIEWS_CHECKS_ID"] = "ID";
+$MESS["SC_REVIEWS_CHECKS_NAME"] = "Наименование проверки";
+$MESS["SC_REVIEWS_CHECKS_VALUE"] = "Строка";
+$MESS["SC_REVIEWS_CHECKS_PATTERN"] = "Шаблон";

@@ -1,0 +1,45 @@
+<?
+$MESS["SC_REVIEWS_ADD_REVIEWS_SPOILER_TITLE"] = "Написать отзыв";
+$MESS["SC_REVIEWS_ADD_REVIEWS_NO_AUTH"] = "Написание отзыва требует предварительной регистрации на сайте";
+$MESS["SC_REVIEWS_ADD_REVIEWS_USER_BAN_TITLE"] = "Извините, Вы не можете оставить отзыв, т.к внесены в черный список.";
+$MESS["SC_REVIEWS_ADD_REVIEWS_USER_BAN_REASON_TITLE"] = "Причина:";
+$MESS["SC_REVIEWS_ADD_REVIEWS_IF_BUY_NOT_TITLE"] = "Извините, Вы не можете оставить отзыв, т.к не покупали этот товар.";
+$MESS["SC_REVIEWS_ADD_REVIEWS_SUCCESS_TEXT"] = "Спасибо, Ваш отзыв отправлен.";
+$MESS["SC_REVIEWS_ADD_REVIEWS_SUBMIT_VALUE"] = "Отправить";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ADD_FIELD_TITLE_worth"]="Достоинства:";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ADD_FIELD_TITLE_limitations"]="Недостатки:";
+$MESS["SC_REVIEWS_ADD_REVIEWS_TITLE"]="Заголовок отзыва";
+$MESS["SC_REVIEWS_ADD_REVIEWS_TEXT"]="Ваш отзыв:";
+$MESS["SC_REVIEWS_ADD_REVIEWS_SORT_DATE"]="По дате";
+$MESS["SC_REVIEWS_ADD_REVIEWS_SORT_LIKES"]="По полезности";
+$MESS["SC_REVIEWS_ADD_REVIEWS_SORT_RATING"]="По рейтингу";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ERROR_IMAGE_MAX_SIZE"]="Размер фотографии не должен превышать";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ERROR_IMAGE_TYPE"]="Фотография должна быть в формате jpg или png";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ERROR_MAX_COUNT_IMAGES"]="Максимальное количество картинок";
+$MESS["SC_REVIEWS_ADD_REVIEWS_RECOMMENDATED"]="Вы бы порекомендовали  этот объект другу?";
+$MESS["SC_REVIEWS_ADD_AUTH_TITLE"]="Чтобы оставить отзыв нужно авторизоваться<br/>Если пользователя с таким логином нет, то вы автоматически зарегистрируетесь на ";
+$MESS["SC_REVIEWS_ADD_REGISTER_TITLE"]="Я новый пользователь";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ADD_TITLE"]="Написать отзыв";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ADD_RATING_TITLE1"]="Оценка";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ADD_RATING_TITLE2"]="Выберите то количество звёзд, которое отражает ваше общее удовлетворение объектом.";
+$MESS["SC_REVIEWS_ADD_REVIEWS_TITLE_EXAMPLE"]="Пример: Самый лучший отзыв.";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ADD_COUNT"]="Введено символов:";
+$MESS["SC_REVIEWS_ADD_REVIEWS_RECOMMENDATED_YES"]="Да";
+$MESS["SC_REVIEWS_ADD_REVIEWS_RECOMMENDATED_NO"]="Нет";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ADD_CANCEL"]="Отменить";
+$MESS["SC_REVIEWS_ADD_REVIEWS_ADD_IMAGES"]="Выберите изображения";
+$MESS["SC_REVIEWS_ADD_REVIEWS_TEXTAREA_RIGHT_TEXT1"]="Советы и рекомендации по составлению отзыва:";
+$MESS["SC_REVIEWS_ADD_REVIEWS_TEXTAREA_RIGHT_TEXT2"]="Сфокусируйтесь только на этом продукте. Расскажите покупателям Ваше мнение о продукте";
+$MESS["SC_REVIEWS_ADD_REVIEWS_TEXTAREA_RIGHT_TEXT3"]='Свяжитесь с нами при наличии проблем, не касающихся специфики товара (доставка, гарантия, сервис)';
+$MESS["SC_REVIEWS_ADD_REVIEWS_SPAM_ERROR"]='Ваш отзыв отмечен как сам';
+$MESS["SC_REVIEWS_ADD_REVIEWS_VIDEO_ERROR"]='Не верная ссылка на видео';
+$MESS["SC_REVIEWS_ADD_REVIEWS_PRESENTATION_ERROR"]='Не верная ссылка на презентацию';
+$MESS["SC_REVIEWS_ADD_REVIEWS_VIDEO"]='Ссылка на видео (Youtube или Vimeo)';
+$MESS["SC_REVIEWS_ADD_REVIEWS_PRESENTATION"]='Ссылка на презентацию (Google Presentation или SlideShare)';
+$MESS["SC_REVIEWS_ADD_REVIEWS_DATE_CREATION"]='Дата написания отзыва:';
+
+$MESS["SC_REVIEWS_ADD_REVIEWS_PLACEHOLDER_DATE"]='дд.мм.гггг';
+$MESS["SC_REVIEWS_ADD_REVIEWS_PLACEHOLDER_FIO"]='Имя Фамилия';
+$MESS["SC_REVIEWS_ADD_REVIEWS_PLUS"]='Плюсы:';
+$MESS["SC_REVIEWS_ADD_REVIEWS_MINUS"]='Минусы:';
+?>
